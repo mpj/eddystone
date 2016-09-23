@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6B3F78851B19766E00AFF84C /* ESSEddystone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F78841B19766E00AFF84C /* ESSEddystone.m */; };
-		6B3F78981B1CB46A00AFF84C /* ESSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F78971B1CB46A00AFF84C /* ESSTimer.m */; };
 		6B50A8881B4ABBC90035579E /* DispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50A8871B4ABBC90035579E /* DispatchTimer.swift */; };
 		6B8201A71B46C4FA00711245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8201A61B46C4FA00711245 /* AppDelegate.swift */; };
 		6B8201A91B46C4FA00711245 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8201A81B46C4FA00711245 /* ViewController.swift */; };
@@ -42,8 +41,6 @@
 /* Begin PBXFileReference section */
 		6B3F78831B19766E00AFF84C /* ESSEddystone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSEddystone.h; sourceTree = "<group>"; };
 		6B3F78841B19766E00AFF84C /* ESSEddystone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSEddystone.m; sourceTree = "<group>"; };
-		6B3F78961B1CB46A00AFF84C /* ESSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSTimer.h; sourceTree = "<group>"; };
-		6B3F78971B1CB46A00AFF84C /* ESSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSTimer.m; sourceTree = "<group>"; };
 		6B50A8871B4ABBC90035579E /* DispatchTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchTimer.swift; sourceTree = "<group>"; };
 		6B8201A21B46C4FA00711245 /* EddystoneScannerSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EddystoneScannerSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8201A51B46C4FA00711245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,8 +103,6 @@
 				6B3F78841B19766E00AFF84C /* ESSEddystone.m */,
 				6BD89F7F1B1545AA001C5B31 /* ESSBeaconScanner.h */,
 				6BD89F801B1545AA001C5B31 /* ESSBeaconScanner.m */,
-				6B3F78961B1CB46A00AFF84C /* ESSTimer.h */,
-				6B3F78971B1CB46A00AFF84C /* ESSTimer.m */,
 			);
 			name = "Beacon Scanner";
 			sourceTree = "<group>";
@@ -285,6 +280,8 @@
 					};
 					6BD89F531B154502001C5B31 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = X322D5PB2U;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -293,6 +290,7 @@
 					};
 					6BD89F6C1B154503001C5B31 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 6BD89F531B154502001C5B31;
 					};
 				};
@@ -367,7 +365,6 @@
 				6BD89F601B154502001C5B31 /* ViewController.m in Sources */,
 				6B3F78851B19766E00AFF84C /* ESSEddystone.m in Sources */,
 				6BD89F5D1B154502001C5B31 /* AppDelegate.m in Sources */,
-				6B3F78981B1CB46A00AFF84C /* ESSTimer.m in Sources */,
 				6BD89F811B1545AA001C5B31 /* ESSBeaconScanner.m in Sources */,
 				6BD89F5A1B154502001C5B31 /* main.m in Sources */,
 			);
@@ -543,11 +540,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X322D5PB2U;
 				INFOPLIST_FILE = EddystoneScannerSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.mpj.EddystoneScannerSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -555,11 +554,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X322D5PB2U;
 				INFOPLIST_FILE = EddystoneScannerSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.mpj.EddystoneScannerSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -579,6 +580,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EddystoneScannerSample.app/EddystoneScannerSample";
 			};
 			name = Debug;
@@ -595,6 +597,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EddystoneScannerSample.app/EddystoneScannerSample";
 			};
 			name = Release;
